@@ -21,7 +21,6 @@ header {
 }
 
 header h1 {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   font-weight: bold;
   margin: 0;
   font-size: 36px;
@@ -46,18 +45,10 @@ header nav ul {
 }
 
 header nav ul li a {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
-header nav ul li a:hover {
-  background: #fce138;
-  color: #024e76;
-  border-radius: 15px;
-  text-shadow: none;
-}
-
 
 /* HEADER / NAVBAR STYLES END */
 
@@ -96,9 +87,6 @@ section {
 
 /* HERO STYLES START */
 .hero {
-  background-attachment: fixed;
-  background-position: 80%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-image: url('../images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
@@ -109,7 +97,6 @@ section {
 }
 
 .hero-cta {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   width: 35%;
   text-align: right;
   margin: 3.5%;
@@ -131,7 +118,6 @@ section {
   color: #024e76;
   width: 40%;
   margin: 3.5%;
-  border-radius: 15px;
 }
 
 .hero-form h3 {
@@ -143,21 +129,13 @@ section {
 }
 
 .form-input {
-  background-color: rgba(255,255,255, 0.75);
   border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
   font-size: 16px;
   color: #024e76;
   width: 100%;
-  margin-bottom: 15px;
-  border-radius: 10px; 
-}
-
-.form-input:focus {
-  
-  background-color: rgba(255,255,255, 1);
-  outline: none;
+  margin-bottom: 15px; 
 }
 
 .hero-form label {
@@ -170,12 +148,7 @@ section {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
-  border-radius: 10px;
 } 
-
-.hero-form button:hover {
-  background-color: #39a6b2;  
-}
 /* HERO STYLES END */
 
 
@@ -221,19 +194,11 @@ section {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
+  border-bottom: 1px solid #39a6b2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #39a6b2;
-}
-
-.step:not(:last-child) {
-  border-bottom: 1px solid #39a6b2;
-}
-
-.step:last-child {
-  border-bottom: 1px solid #39a6b2;
 }
 
 .step h3 {
@@ -356,7 +321,6 @@ section {
 }
 
 .contact-form input, .contact-form textarea {
-  background-color: rgba(255,255,255, 1);
   border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
@@ -365,15 +329,6 @@ section {
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
-  border-radius: 10px;
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
-  
-  
-  background-color: rgba(255,255,255, 1);
-  outline: none;
-
 }
 
 .contact-form button {
@@ -384,12 +339,6 @@ section {
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
-  border-radius: 10px;
-}
-
-.contact-form button:hover {
-  color: #fce138;
-  background: #39a6b2;
 }
 
 .contact-info a {
@@ -415,16 +364,8 @@ section {
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   header {
-    background-image: url('../images/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
     padding-bottom: 0;
     justify-content: center;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-attachment: fixed;
-    background-position: 80%;
   }
 
   header h1 {
@@ -527,8 +468,3 @@ section {
     order: 3;
   }
 }
-
-
-
-
-
